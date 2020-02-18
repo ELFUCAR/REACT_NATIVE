@@ -10,8 +10,6 @@ export default class App extends Component {
           <SafeAreaView style={styles.container}>
               <FlatListExample></FlatListExample>
           </SafeAreaView>
-
-
       );
   }
 }
@@ -21,7 +19,6 @@ const styles = StyleSheet.create({
     }
 
 });
-
 
 
 //--------  data.js
@@ -60,9 +57,7 @@ export default [
 )
 
 //-----------   FlatListExample.js
-
 //  './src/components/FlatListExample';
-
 
 
 import React, {Component} from 'react';
@@ -98,8 +93,6 @@ this.setState({
     contacts:newData,
 });
     };
-
-
     renderHeader=()=>{
         const {text}=this.state;
         return(
@@ -114,7 +107,6 @@ this.setState({
             </View>
         )
     }
-
     render() {
         return (
                 <FlatList
