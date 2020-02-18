@@ -35,8 +35,6 @@ const styles = StyleSheet.create({
   }
 });
 
-
-
 //---------------- DetailScreen.js
 
 import {Component} from "react";
