@@ -84,7 +84,6 @@ export default class LotsOfStyles extends Component {
                     <Button title='increase' color='#111' onPress={this.onPressIncrease}/>
                     <Button title='decrease' color='#111' onPress={this.onPressDecrease}/>
                 </View >
-           
             </View>
 
         );
