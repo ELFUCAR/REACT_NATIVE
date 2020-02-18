@@ -27,8 +27,7 @@ const styles = StyleSheet.create({
         borderColor:'#aaa',
         justifyContent:'center',
         alignItems:'center'
-    }
-  
+    } 
 });
 
 export default class LotsOfStyles extends Component {
@@ -36,7 +35,6 @@ export default class LotsOfStyles extends Component {
     onPressDetail=()=>{
         alert('Detail');
     };
-
     render() {
         return (
             <View style={styles.container}>
@@ -44,7 +42,6 @@ export default class LotsOfStyles extends Component {
                 
                 <Button title='Button' color='#111' onPress={this.onPressDetail}/>
                 </View>
-
                 <View style={styles.box1}>
                 <Text style={styles.red}>red</Text>
                 <Text style={styles.bigblue}>bigBlue</Text>
@@ -53,7 +50,6 @@ export default class LotsOfStyles extends Component {
             </View>
               <Image source={require('./src/assets/yildiz.jpg')}/>
             </View>
-
         );
     }
 }
