@@ -33,7 +33,7 @@ import AboutModal from './screens/AboutModal';
 const MainStack = createStackNavigator({
     Home: HomeScreen,
     Detail: DetailScreen,
-    Modal:AboutModal
+   // Modal:AboutModal
 }, {
     initialRouteName: "Home",
     headerLayoutPreset: "center",
@@ -48,13 +48,13 @@ const MainStack = createStackNavigator({
 
 const ModalStack=createStackNavigator({
     Main: MainStack,
-   // Modal: AboutModal
+    Modal: AboutModal
 },
     {
         mode:'modal',
         headerMode:'none'
 });
-export default createAppContainer(MainStack);
+export default createAppContainer(ModalStack);
 
 
 
