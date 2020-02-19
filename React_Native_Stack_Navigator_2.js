@@ -46,7 +46,6 @@ const MainStack = createStackNavigator({
     },
 });
 
-
 const ModalStack=createStackNavigator({
     Main: MainStack,
    // Modal: AboutModal
@@ -76,7 +75,6 @@ class TitleLogo extends Component{
      )
     }
 };
-
 
 export default class HomeScreen extends Component {
     static navigationOptions = ({navigation}) => {
@@ -198,7 +196,6 @@ export default class AboutModal extends Component{
 
         );
     }
-
 }
 
 const styles= StyleSheet.create({
@@ -211,6 +208,3 @@ const styles= StyleSheet.create({
         fontSize:26
     }
 });
-
-
-
