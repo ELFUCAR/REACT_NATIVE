@@ -1,0 +1,65 @@
+/*
+ScrollView
+Image
+ */
+import React, { Component } from 'react';
+import { StyleSheet, Text, View,ScrollView,Image} from 'react-native';
+
+const styles = StyleSheet.create({
+    bigBlue: {
+        color: 'blue',
+        fontWeight: 'bold',
+        fontSize: 30,
+    },
+    red: {
+        color: 'red',
+    },
+});
+
+export default class LotsOfStyles extends Component {
+    render() {
+        return (
+            <View>
+                <View style={{width: 400, height: 70, backgroundColor: 'powderblue'}}>
+                    <Text style={styles.red}>just red</Text>
+                </View>
+                <View style={{width: 400, height: 70, backgroundColor: 'skyblue'}} >
+                     <Text style={styles.bigBlue}>just bigBlue</Text>
+                </View>
+                <View style={{width: 400, height: 70, backgroundColor: 'steelblue'}} >
+                    <Text style={[styles.bigBlue, styles.red]}>bigBlue, then red</Text>
+                </View>
+                <View style={{width: 400, height: 70, backgroundColor: 'powderblue'}} >
+                    <Text style={[styles.red, styles.bigBlue]}>red, then bigBlue</Text>
+                </View>
+
+
+                <ScrollView>
+                    <Text style={{fontSize:45}}>React Native</Text>
+                    <Image source={{uri: "https://reactnative.dev/img/tiny_logo.png", width: 64, height: 64}} />
+                    <Image source={{uri: "https://reactnative.dev/img/tiny_logo.png", width: 64, height: 64}} />
+                    <Image source={{uri: "https://reactnative.dev/img/tiny_logo.png", width: 64, height: 64}} />
+                    <Image source={{uri: "https://reactnative.dev/img/tiny_logo.png", width: 64, height: 64}} />
+                    <Text style={{fontSize:45}}>React Native</Text>
+                    <Image source={{uri: "https://reactnative.dev/img/tiny_logo.png", width: 64, height: 64}} />
+                    <Image source={{uri: "https://reactnative.dev/img/tiny_logo.png", width: 64, height: 64}} />
+                    <Image source={{uri: "https://reactnative.dev/img/tiny_logo.png", width: 64, height: 64}} />
+                    <Image source={{uri: "https://reactnative.dev/img/tiny_logo.png", width: 64, height: 64}} />
+                    <Text style={{fontSize:45}}>React Native</Text>
+                    <Image source={{uri: "https://reactnative.dev/img/tiny_logo.png", width: 64, height: 64}} />
+                    <Image source={{uri: "https://reactnative.dev/img/tiny_logo.png", width: 64, height: 64}} />
+                    <Image source={{uri: "https://reactnative.dev/img/tiny_logo.png", width: 64, height: 64}} />
+                    <Image source={{uri: "https://reactnative.dev/img/tiny_logo.png", width: 64, height: 64}} />
+                    <Text style={{fontSize:45}}>React Native</Text>
+                    <Image source={{uri: "https://reactnative.dev/img/tiny_logo.png", width: 64, height: 64}} />
+                    <Image source={{uri: "https://reactnative.dev/img/tiny_logo.png", width: 64, height: 64}} />
+                    <Image source={{uri: "https://reactnative.dev/img/tiny_logo.png", width: 64, height: 64}} />
+                    <Image source={{uri: "https://reactnative.dev/img/tiny_logo.png", width: 64, height: 64}} />
+                    <Text style={{fontSize:45}}>React Native</Text>
+                </ScrollView>
+
+            </View>
+
+        );
+    }
+}
